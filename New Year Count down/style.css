@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('newyear2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+body * {
+    z-index: 1;
+}
+
+.countdown {
+    display: flex;
+  
+}
+h1 {
+    position: absolute;
+    top: 120px;
+    font-size: 60px ;
+    font-family:'Baloo Paaji 2', cursive;;
+
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+    font-family: monospace;
+    
+}
+
+
+@media(max-width: 500px) {
+    h1{ 
+        font-size: 35px;
+    }
+
+    .timer {
+        margin:5px;
+        font-size: 10px;
+
+    }
+}
